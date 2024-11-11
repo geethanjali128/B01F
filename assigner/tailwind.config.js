@@ -43,7 +43,7 @@ module.exports = {
         18.17: "18.17px",
       },
       boxShadow: {
-        customLight: "box-shadow: 0px 4px 4px 0px #00000040",
+        customLight: "0px 4px 4px 0px #00000040",
       },
     },
   },
