@@ -6,10 +6,10 @@ import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="w-full h-auto font-robot">
+    <div className="md:w-full h-auto font-robot">
       <div className="bg-customPurple flex flex-row-reverse items-center">
         <img
-          className="w-274 h-38.22 py-[5px] px-3"
+          className="md:w-274 md:h-38.22 h-8 py-[5px] px-3"
           src={Container}
           alt="above the nav"
         />

@@ -8,17 +8,27 @@ const NavLinks = ({ isMobile }) => {
     <ul
       className={`${
         isMobile
-          ? "flex flex-col items-center gap-4 py-4 bg-customGrey w-full"
-          : "shadow-customLight flex items-center font-medium gap-[63px] py-[14px] px-[35px] bg-customGrey text-16 leading-19.38"
+          ? "  flex flex-col items-center gap-4 py-4 bg-customGrey w-full"
+          : "  shadow-customLight flex items-center font-medium gap-[63px] py-[14px] px-[35px] bg-customGrey text-16 leading-19.38"
       }`}
     >
       <Link to="/">
-        <li className="font-bold cursor-pointer">Home</li>
+        <li className=" h-5 font-bold cursor-pointer hover:border-b-2 hover:border-green-700">
+          Home
+        </li>
       </Link>
-      <li className="cursor-pointer">About Us</li>
-      <li className="cursor-pointer">Our Services</li>
-      <li className="cursor-pointer">IELTS & PTE</li>
-      <li className="cursor-pointer">Contact Us</li>
+      <li className=" h-5 cursor-pointer  hover:border-b-2 hover:border-green-700">
+        About Us
+      </li>
+      <li className=" h-5 cursor-pointer hover:border-b-2 hover:border-green-700">
+        Our Services
+      </li>
+      <li className="h-5 cursor-pointer hover:border-b-2 hover:border-green-700">
+        IELTS & PTE
+      </li>
+      <li className=" h-5 cursor-pointer hover:border-b-2 hover:border-green-700">
+        Contact Us
+      </li>
     </ul>
   );
 };

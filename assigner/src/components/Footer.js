@@ -16,17 +16,20 @@ const Footer = ({ data }) => {
         backgroundImage: `url(${footerImage})`,
         backgroundRepeat: "no-repeat",
       }}
-      className="w-[100%] h-503 object-cover object-center  -mt-3"
+      className="w-[100%] md:h-503 h-760 object-cover object-center  -mt-3"
     >
-      <div className="flex md:ml-20 md:gap-10  gap-5  pt-10 font-robot sm:ml-10 ml-5">
+      <div className="flex md:ml-20 md:gap-10  gap-3  md:pt-10 pt-5 font-robot sm:ml-10 ml-5">
         {data.map((dataItem) => (
           <div key={dataItem.id}>
-            <h4 className="md:text-3xl font-bold pb-1 text-lg">
+            <h4 className="md:text-3xl font-bold pb-1 text-sm">
               {dataItem.title}
             </h4>
             <ul>
               {dataItem.items.map((item, index) => (
-                <li key={index} className="py-2 md:text-lg text-sm">
+                <li
+                  key={index}
+                  className="py-2 md:text-lg text-xs hover:text-blue-400 cursor-pointer"
+                >
                   {item}
                 </li>
               ))}
@@ -34,16 +37,16 @@ const Footer = ({ data }) => {
           </div>
         ))}
       </div>
-      <div className="flex flex-col md:justify-self-end justify-end md:mr-20 mr-5 md:-mt-32 -mt-20 justify-self-end  ">
-        <h4 className="md:text-3xl font-bold pb-2">Newsletter</h4>
-        <p className="md:text-xl text-sm font-medium pb-2">
+      <div className="flex flex-col md:justify-self-end justify-end md:mr-20 mr-3 md:-mt-32 -mt-16 justify-self-end  ">
+        <h4 className="md:text-3xl font-bold pb-2 text-sm">Newsletter</h4>
+        <p className="md:text-xl text-xs font-medium pb-2">
           You can trust us. We only send promo offers,
         </p>
         <div className="flex md:gap-24  gap-5 items-center py-2">
-          <span className="md:text-xl text-base text-customWhite bg-customPurple1 py-1 px-3 ml-3">
+          <span className="md:text-xl text-xs text-customWhite bg-customPurple1 py-1 px-3 ml-3">
             Your email here
           </span>
-          <span className="text-base text-customWhite bg-customVoilet1 py-1 px-3">
+          <span className="md:text-base text-xs text-customWhite bg-customVoilet1 py-1 px-3">
             Subscribe
           </span>
         </div>

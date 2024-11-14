@@ -20,14 +20,14 @@ const Feautures = ({ data }) => {
     });
   };
   return (
-    <div className=" md:h-221 md:my-3 h-[600px] sm:h-[300px] mt-3 mb-1">
+    <div className=" md:h-221 md:my-3 h-[600px] sm:h-[300px] mt-7 mb-1">
       <h3 className="text-center md:text-3xl text-xl font-bold ">
         Awesome Features
       </h3>
       <p className="text-center md:text-2xl text-md font-medium ">
         Get ready to unlock the next level of features
       </p>
-      <div className=" grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 mx-44 sm:mx-20 md:mx-10   mt-3  ">
+      <div className=" grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 mx-24 sm:mx-20 md:mx-10   mt-3  ">
         {data.map((item, index) => (
           <div
             key={item.id}

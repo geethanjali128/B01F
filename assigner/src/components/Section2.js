@@ -22,7 +22,7 @@ const Section2 = () => {
           <br /> Audax negotium, dicerem impudens, nisi hoc institut
           <br /> translatum ad philosophos nostros esset.
         </p>
-        <button className="md:text-3xl text-customWhite bg-customPurple2 rounded-md px-10 py-2 mt-7 ml-3">
+        <button className="hover:text-customPurple2 hover:bg-transparent hover:border-2 border-customPurple2   md:text-3xl text-customWhite bg-customPurple2 rounded-md px-10 py-2 mt-7 ml-3">
           Enroll Now
         </button>
       </div>

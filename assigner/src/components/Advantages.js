@@ -24,11 +24,11 @@ const Advantages = ({ data }) => {
         The Assigner wants to build a strong foundation that will enable
         students to soar to achievement.
       </p>
-      <div className="grid md:grid-cols-4  sm:grid-cols-2 grid-cols-1 md:w-9/12 md:mx-auto mx-48 w-8/12  ">
+      <div className="grid md:grid-cols-4  sm:grid-cols-2 grid-cols-1   md:w-9/12  md:mx-auto mx-32  w-8/12  ">
         {data.map((item) => (
           <div
             key={item.id}
-            className="border border-black w-56  p-3 rounded-2xl bg-customWheat -mx-5 mb-2"
+            className="border border-black w-56  p-3  transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl  cursor-pointer rounded-2xl bg-customWheat -mx-5 mb-2"
           >
             <h4 className="md:text-2xl md:pt-5 pb-2 mt-2 text-lg">
               {item.title}

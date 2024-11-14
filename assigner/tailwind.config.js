@@ -30,6 +30,8 @@ module.exports = {
         121: "121px",
         221: "221px",
         300: "300px",
+        760: "760px",
+        350: "350px",
       },
       colors: {
         customGrey: "#F5F5F5",
